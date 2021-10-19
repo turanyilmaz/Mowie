@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search-->
+        <scene sceneID="IHS-Me-lVl">
+            <objects>
+                <viewController id="LvM-zy-agM" customClass="SearchViewController" customModule="Movilien" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vEj-gs-Ja8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GAm-G4-dsW">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="144-9x-zjl">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                        <subviews>
+                                            <searchBar contentMode="redraw" placeholder="Search movie" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gjp-T9-Mr4">
+                                                <rect key="frame" x="0.0" y="0.0" width="352" height="60"/>
+                                                <color key="tintColor" name="mainOrange"/>
+                                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="done"/>
+                                                <scopeButtonTitles>
+                                                    <string>Title</string>
+                                                    <string>Title</string>
+                                                </scopeButtonTitles>
+                                            </searchBar>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YeF-3d-URj">
+                                                <rect key="frame" x="357" y="0.0" width="52" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fII-Iy-G81">
+                                                        <rect key="frame" x="0.0" y="18" width="24" height="24"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="24" id="9xc-sc-8N8"/>
+                                                            <constraint firstAttribute="width" constant="24" id="W4a-Je-dw1"/>
+                                                        </constraints>
+                                                        <color key="tintColor" name="mainOrange"/>
+                                                        <state key="normal" image="movie_icon"/>
+                                                    </button>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_icon" translatesAutoresizingMaskIntoConstraints="NO" id="uZp-8w-cqq">
+                                                        <rect key="frame" x="32" y="20" width="20" height="20"/>
+                                                        <color key="tintColor" red="0.58108428030000003" green="0.5802664998" blue="0.55762765140000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="7Fe-0j-EfN"/>
+                                                            <constraint firstAttribute="height" constant="20" id="iaU-Ph-ZYu"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Gjp-T9-Mr4" firstAttribute="leading" secondItem="144-9x-zjl" secondAttribute="leading" id="0Zo-Bi-OFb"/>
+                                            <constraint firstAttribute="trailing" secondItem="YeF-3d-URj" secondAttribute="trailing" constant="5" id="6P8-aA-HM8"/>
+                                            <constraint firstItem="YeF-3d-URj" firstAttribute="top" secondItem="Gjp-T9-Mr4" secondAttribute="top" id="VQ2-yr-Jwi"/>
+                                            <constraint firstItem="Gjp-T9-Mr4" firstAttribute="top" secondItem="144-9x-zjl" secondAttribute="top" id="lhl-rF-Yjj"/>
+                                            <constraint firstAttribute="bottom" secondItem="Gjp-T9-Mr4" secondAttribute="bottom" id="oYw-zs-xFU"/>
+                                            <constraint firstItem="YeF-3d-URj" firstAttribute="leading" secondItem="Gjp-T9-Mr4" secondAttribute="trailing" constant="5" id="sAk-S1-Gu0"/>
+                                            <constraint firstAttribute="height" constant="60" id="tyw-xU-b5M"/>
+                                            <constraint firstAttribute="bottom" secondItem="YeF-3d-URj" secondAttribute="bottom" id="v7j-oW-Lqp"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0bL-T2-yjB">
+                                        <rect key="frame" x="0.0" y="60" width="414" height="0.0"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" id="b39-E4-FNI"/>
+                                        </constraints>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jrI-0r-bgj">
+                                        <rect key="frame" x="0.0" y="60" width="414" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search for:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddE-ta-AKU">
+                                                <rect key="frame" x="10" y="10" width="67" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="jnC-RQ-w7I">
+                                                <rect key="frame" x="97" y="8" width="297" height="24"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AWq-at-LOa">
+                                                        <rect key="frame" x="0.0" y="0.0" width="83" height="24"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="movie"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                        <color key="tintColor" name="mainOrange"/>
+                                                        <state key="normal" title="Movie" image="movie_icon">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonTapped:" destination="LvM-zy-agM" eventType="touchUpInside" id="k8l-2v-XX6"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDV-e1-WlG">
+                                                        <rect key="frame" x="107" y="0.0" width="83" height="24"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="tv"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                        <color key="tintColor" name="mainOrange"/>
+                                                        <state key="normal" title="TV" image="tv_icon"/>
+                                                        <connections>
+                                                            <action selector="buttonTapped:" destination="LvM-zy-agM" eventType="touchUpInside" id="wTq-eh-AWN"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cL-f2-7gK">
+                                                        <rect key="frame" x="214" y="0.0" width="83" height="24"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="person"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                        <color key="tintColor" name="mainOrange"/>
+                                                        <state key="normal" title="People" image="person.fill" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="buttonTapped:" destination="LvM-zy-agM" eventType="touchUpInside" id="Eal-1Z-GMP"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.024719854797979779" green="0.024719854797979779" blue="0.024719854797979779" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="2Bm-wY-Mye"/>
+                                            <constraint firstItem="ddE-ta-AKU" firstAttribute="leading" secondItem="jrI-0r-bgj" secondAttribute="leading" constant="10" id="4JV-Jg-7Zf"/>
+                                            <constraint firstAttribute="trailing" secondItem="jnC-RQ-w7I" secondAttribute="trailing" constant="20" id="5TS-Au-lrV"/>
+                                            <constraint firstItem="jnC-RQ-w7I" firstAttribute="leading" secondItem="ddE-ta-AKU" secondAttribute="trailing" constant="20" id="6qz-Ae-ga9"/>
+                                            <constraint firstItem="jnC-RQ-w7I" firstAttribute="centerY" secondItem="ddE-ta-AKU" secondAttribute="centerY" id="99G-Ax-uIG"/>
+                                            <constraint firstItem="ddE-ta-AKU" firstAttribute="top" secondItem="jrI-0r-bgj" secondAttribute="top" constant="10" id="Ixa-vz-8Lt"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ua2-i8-1te" customClass="ListView" customModule="Movilien" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="60" width="414" height="714"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tg3-yx-cqS"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tg3-yx-cqS" firstAttribute="trailing" secondItem="Ua2-i8-1te" secondAttribute="trailing" id="0Ff-az-dOn"/>
+                            <constraint firstItem="GAm-G4-dsW" firstAttribute="top" secondItem="tg3-yx-cqS" secondAttribute="top" id="0TM-sx-cbz"/>
+                            <constraint firstItem="Ua2-i8-1te" firstAttribute="top" secondItem="GAm-G4-dsW" secondAttribute="bottom" id="IlT-FO-JwD"/>
+                            <constraint firstItem="GAm-G4-dsW" firstAttribute="trailing" secondItem="tg3-yx-cqS" secondAttribute="trailing" id="LwM-ca-4qg"/>
+                            <constraint firstItem="GAm-G4-dsW" firstAttribute="leading" secondItem="tg3-yx-cqS" secondAttribute="leading" id="Z63-v1-n4L"/>
+                            <constraint firstItem="Ua2-i8-1te" firstAttribute="leading" secondItem="tg3-yx-cqS" secondAttribute="leading" id="nKg-rp-ODW"/>
+                            <constraint firstItem="tg3-yx-cqS" firstAttribute="bottom" secondItem="Ua2-i8-1te" secondAttribute="bottom" id="obP-59-XI5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Search" id="Tjo-UB-PUL"/>
+                    <connections>
+                        <outlet property="buttonStackView" destination="YeF-3d-URj" id="Mgd-vA-A3l"/>
+                        <outlet property="listView" destination="Ua2-i8-1te" id="2D9-bH-bY6"/>
+                        <outlet property="optionsButtonStackView" destination="jnC-RQ-w7I" id="Lzt-uR-o2f"/>
+                        <outlet property="searchBar" destination="Gjp-T9-Mr4" id="O6h-NR-514"/>
+                        <outlet property="searchOptionsView" destination="jrI-0r-bgj" id="Dk8-g7-5Ja"/>
+                        <outlet property="showOptionButton" destination="fII-Iy-G81" id="XVv-Zf-Rd2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4xj-5m-AoM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="960.86956521739137" y="81.696428571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="D2s-pj-yH0">
+            <objects>
+                <navigationController storyboardIdentifier="NavigationViewController" automaticallyAdjustsScrollViewInsets="NO" id="BWE-kN-uah" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="Gqb-W3-8dQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="mainOrange"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                            <color key="textColor" name="mainOrange"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LvM-zy-agM" kind="relationship" relationship="rootViewController" id="2hD-u5-EkD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oqe-sM-wFM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.724637681159422" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow_icon" width="30" height="30"/>
+        <image name="movie_icon" width="24" height="24"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="tv_icon" width="24" height="24"/>
+        <namedColor name="mainOrange">
+            <color red="0.91200000047683716" green="0.65799999237060547" blue="0.090000003576278687" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

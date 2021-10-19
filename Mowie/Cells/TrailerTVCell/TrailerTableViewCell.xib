@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="262" id="KGk-i7-Jjw" customClass="TrailerTableViewCell" customModule="Movilien" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="387" height="262"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="387" height="262"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kOJ-Ab-ZrR" customClass="YTPlayerView">
+                        <rect key="frame" x="0.0" y="0.0" width="387" height="192"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="192" id="5uJ-nt-YhI"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W0z-Jq-6PE">
+                        <rect key="frame" x="0.0" y="0.0" width="387" height="192"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="U9F-b1-2hU">
+                        <rect key="frame" x="157.5" y="60.5" width="72" height="71"/>
+                        <color key="tintColor" red="0.64192708330000003" green="0.64192708330000003" blue="0.64192708330000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="72" id="qW9-eu-6Gq"/>
+                            <constraint firstAttribute="width" constant="72" id="wNg-JO-1GE"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEd-4j-zu6">
+                        <rect key="frame" x="0.0" y="202" width="347" height="50"/>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VEd-4j-zu6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="06B-Pl-uWA"/>
+                    <constraint firstItem="U9F-b1-2hU" firstAttribute="centerY" secondItem="W0z-Jq-6PE" secondAttribute="centerY" id="0gA-OL-q62"/>
+                    <constraint firstItem="W0z-Jq-6PE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1Ik-hS-1GM"/>
+                    <constraint firstAttribute="trailing" secondItem="W0z-Jq-6PE" secondAttribute="trailing" id="1QK-Z8-ODX"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="VEd-4j-zu6" secondAttribute="trailing" constant="20" id="JYz-6L-gBN"/>
+                    <constraint firstItem="kOJ-Ab-ZrR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Llf-I0-PKE"/>
+                    <constraint firstItem="W0z-Jq-6PE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="MTz-4Q-VPS"/>
+                    <constraint firstAttribute="trailing" secondItem="kOJ-Ab-ZrR" secondAttribute="trailing" id="OaT-Kd-ZKJ"/>
+                    <constraint firstItem="VEd-4j-zu6" firstAttribute="top" secondItem="W0z-Jq-6PE" secondAttribute="bottom" constant="10" id="Y5F-8O-BH1"/>
+                    <constraint firstItem="VEd-4j-zu6" firstAttribute="top" secondItem="kOJ-Ab-ZrR" secondAttribute="bottom" constant="10" id="Ym6-0Z-EHs"/>
+                    <constraint firstItem="U9F-b1-2hU" firstAttribute="centerX" secondItem="W0z-Jq-6PE" secondAttribute="centerX" id="mQO-oa-xW3"/>
+                    <constraint firstItem="kOJ-Ab-ZrR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ter-4b-aQF"/>
+                    <constraint firstAttribute="bottom" secondItem="VEd-4j-zu6" secondAttribute="bottom" constant="10" id="y80-iz-Tg0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="thumbnailImageView" destination="W0z-Jq-6PE" id="i0y-0q-ZUH"/>
+                <outlet property="titleLabel" destination="VEd-4j-zu6" id="kb4-EX-fh4"/>
+                <outlet property="ytPlayerView" destination="kOJ-Ab-ZrR" id="hlt-xa-bLp"/>
+            </connections>
+            <point key="canvasLocation" x="152.89855072463769" y="77.678571428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="play.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

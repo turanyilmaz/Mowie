@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--About View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="AboutViewController" id="Y6W-OH-hqX" customClass="AboutViewController" customModule="Mowie" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ipX-jJ-gm8"/>
+                        <viewControllerLayoutGuide type="bottom" id="mfi-fZ-tLo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" tag="101" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="iGo-C7-FL7">
+                                <rect key="frame" x="20" y="74" width="374" height="163.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tmdb_logo" translatesAutoresizingMaskIntoConstraints="NO" id="0pK-bI-raJ">
+                                        <rect key="frame" x="144.5" y="0.0" width="85" height="62"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="85" id="HJn-fY-a04"/>
+                                            <constraint firstAttribute="height" constant="62" id="hAS-z2-lgF"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This product uses the TMDB API but is not endorsed or certified by TMDB." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sas-EB-p4p">
+                                        <rect key="frame" x="0.0" y="82" width="374" height="41"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://developers.themoviedb.org/3" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWb-h4-TNb">
+                                        <rect key="frame" x="62.5" y="143" width="249.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <gestureRecognizers/>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n5v-gk-miW">
+                                <rect key="frame" x="20" y="351" width="374" height="1"/>
+                                <color key="backgroundColor" red="0.47105823860000001" green="0.47105823860000001" blue="0.47105823860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="24y-Pv-sfC"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" tag="102" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="ZR0-9a-HCY">
+                                <rect key="frame" x="144.5" y="278.5" width="125" height="52.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUe-D7-aXv">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="25"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Icons by">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="17" name="Avenir-Book"/>
+                                                    <font key="NSOriginalFont" size="17" name="Avenir-Book"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="17" name="Avenir-Book"/>
+                                                    <font key="NSOriginalFont" size="17" name="Avenir-Book"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Icon">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.1730163172318252" green="1" blue="0.27529669696927217" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="18" name="Avenir-Heavy"/>
+                                                    <font key="NSOriginalFont" size="17" name="Avenir-Heavy"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="s">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.1730163172318252" green="1" blue="0.27529669696927217" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="18" name="Avenir-Heavy"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="8">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.1730163172318252" green="1" blue="0.27529669696927217" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="18" name="Avenir-Heavy"/>
+                                                    <font key="NSOriginalFont" size="17" name="Avenir-Heavy"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://icons8.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Al7-fi-LQR">
+                                        <rect key="frame" x="0.0" y="32" width="125" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xIO-Mj-vQR">
+                                <rect key="frame" x="20" y="257.5" width="374" height="1"/>
+                                <color key="backgroundColor" red="0.47105823863636365" green="0.47105823863636365" blue="0.47105823863636365" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="m9l-JZ-hZR"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="version" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tL-fO-J8Y">
+                                <rect key="frame" x="369" y="822.5" width="45" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TO2-uJ-2Uz">
+                                <rect key="frame" x="20" y="372" width="374" height="23.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="App icon made by ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Good Ware">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="Avenir-Heavy"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" from ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Flaticon">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="Avenir-Heavy"/>
+                                            <font key="NSOriginalFont" size="18" name="Avenir-Heavy"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="n5v-gk-miW" firstAttribute="top" secondItem="ZR0-9a-HCY" secondAttribute="bottom" constant="20" id="2SB-CM-XfV"/>
+                            <constraint firstItem="ZR0-9a-HCY" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="7GT-yf-ADN"/>
+                            <constraint firstItem="n5v-gk-miW" firstAttribute="trailing" secondItem="5EZ-qb-Rvc" secondAttribute="trailingMargin" id="7k6-7W-oIP"/>
+                            <constraint firstItem="TO2-uJ-2Uz" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="20" id="9rf-iC-Hin"/>
+                            <constraint firstItem="mfi-fZ-tLo" firstAttribute="top" secondItem="5tL-fO-J8Y" secondAttribute="bottom" constant="20" id="AfY-k4-2bg"/>
+                            <constraint firstItem="iGo-C7-FL7" firstAttribute="top" secondItem="ipX-jJ-gm8" secondAttribute="bottom" constant="30" id="Is0-6t-7m5"/>
+                            <constraint firstItem="ZR0-9a-HCY" firstAttribute="top" secondItem="xIO-Mj-vQR" secondAttribute="bottom" constant="20" id="PII-ZA-8oV"/>
+                            <constraint firstItem="n5v-gk-miW" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leadingMargin" id="VwQ-Yn-jgN"/>
+                            <constraint firstAttribute="trailing" secondItem="iGo-C7-FL7" secondAttribute="trailing" constant="20" id="ZWY-ID-f8S"/>
+                            <constraint firstItem="xIO-Mj-vQR" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="20" id="aWO-mw-oCd"/>
+                            <constraint firstItem="xIO-Mj-vQR" firstAttribute="top" secondItem="iGo-C7-FL7" secondAttribute="bottom" constant="20" id="bqD-hk-goR"/>
+                            <constraint firstAttribute="trailing" secondItem="xIO-Mj-vQR" secondAttribute="trailing" constant="20" id="eir-qR-MC0"/>
+                            <constraint firstAttribute="trailing" secondItem="TO2-uJ-2Uz" secondAttribute="trailing" constant="20" id="g8m-do-Cea"/>
+                            <constraint firstItem="TO2-uJ-2Uz" firstAttribute="top" secondItem="n5v-gk-miW" secondAttribute="bottom" constant="20" id="hyk-oS-epo"/>
+                            <constraint firstAttribute="trailing" secondItem="5tL-fO-J8Y" secondAttribute="trailing" id="nki-KB-Tg5"/>
+                            <constraint firstItem="iGo-C7-FL7" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="20" id="qsl-kH-xUt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appVersionLabel" destination="5tL-fO-J8Y" id="fbI-1s-9qC"/>
+                        <outlet property="icons8StackView" destination="ZR0-9a-HCY" id="W55-F4-Bwo"/>
+                        <outlet property="tmdbStackView" destination="iGo-C7-FL7" id="Bfm-it-kpH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76.811594202898561" y="41.517857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tmdb_logo" width="185.03999328613281" height="133.39999389648438"/>
+    </resources>
+</document>

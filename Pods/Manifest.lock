@@ -1,0 +1,30 @@
+PODS:
+  - Pageboy (3.6.2)
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
+  - Tabman (2.11.1):
+    - Pageboy (~> 3.6.0)
+  - youtube-ios-player-helper (1.0.3)
+
+DEPENDENCIES:
+  - SDWebImage
+  - Tabman (~> 2.11)
+  - youtube-ios-player-helper
+
+SPEC REPOS:
+  trunk:
+    - Pageboy
+    - SDWebImage
+    - Tabman
+    - youtube-ios-player-helper
+
+SPEC CHECKSUMS:
+  Pageboy: cf121b9dd48c63f3f281b2a9ec93d02e0f23879b
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
+  Tabman: 792ac76fd1ec95af175c93db880a3c47cabedc91
+  youtube-ios-player-helper: 0185c57db23c80d63d6ca11251d110abb8a4ca61
+
+PODFILE CHECKSUM: bcdec50cdfb130de2b45e31acf63195a1fa267df
+
+COCOAPODS: 1.10.0
